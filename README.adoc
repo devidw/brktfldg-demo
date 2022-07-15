@@ -10,8 +10,6 @@ _Put yourself in position to *decide* if you want to see the possibly *unnecessa
 
 Open https://devidw.github.io/brktfldg-demo/[live demo] 
 
-image::demo.png[width="100%",link="https://devidw.github.io/brktfldg-demo/"]
-
 
 == About
 
