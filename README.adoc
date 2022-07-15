@@ -1,0 +1,32 @@
+= brktfldg
+:author: David Wolf
+
+Bracket Folding. Collapse all pairs of brackets on a website and gives you the ability to unfold them individually:
+
+_Put yourself in position to *decide* if you want to see the possibly *unnecessary information-overload* or not._
+
+
+== Demo
+
+Open https://devidw.github.io/brktfldg-demo/[live demo] 
+
+image::demo.png[width="100%",link="https://devidw.github.io/brktfldg-demo/"]
+
+
+== About
+
+Text on the web is overloaded by information.
+
+Somehow, people began to put even more information in their text by adding sections enclosed by brackets.
+
+It is just super difficult to read through all these sentences blown up with brackets and info everywhere, I mean honestly once starting such a sentence you forget about the beginning, because you have read over a bunch of not even interesting off-topic stuff wrapped in way too many pairs of brackets.
+
+If you don't know what I am talking about just have a quick view on Wikipedia and try to go though an article, have fun counting how many bricks of text are encapsulated in brackets and then think about the value they give you on one hand and the pain to lose the sentence and context on the other hand.
+
+Too many brackets - mostly brackets in general - make the actually text hard to read and understand, since based on the way we learned to process text-based information, we automatically read every content from left to right, no matter whether the info is even important to us or not, so we end up to reading all of it, and at the end we only understand half of it thanks to the jungle of trash injection made possible by these sweet pairs of brackets.
+
+People need to stop doing this, but since most people won't understand the pain and there is a lot of bracket-rich text out there, we put us in control again by fading out these brackets by default everywhere. 
+
+Once we have gone through a sentence or section and have understood it, maybe we want to dive deeper and are interested into what the author has wrapped additionally. That's where we can optionally open each pair of brackets and its content individually and once we have read it, we can also close it again.
+
+That's the power of _brktfldg_ - _bracket folding_.

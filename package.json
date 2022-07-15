@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "scripts": {
+    "build-sass": "sass ./src/sass/index.sass ./dist/index.min.css --style compressed",
+    "watch-sass": "sass ./src/sass/index.sass ./dist/index.min.css --style compressed --watch",
+    "build": "yarn run build-sass",
+    "watch": "yarn run watch-sass"
+  },
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
