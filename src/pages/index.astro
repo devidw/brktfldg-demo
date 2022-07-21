@@ -1,9 +1,8 @@
 ---
 import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
 import Comparison from "../components/Comparison.astro"
 import Bex from "../components/Bex.astro"
-import { ArrowSmDownIcon } from '@heroicons/vue/outline'
+import { Icon } from 'astro-icon'
 ---
 
 <!DOCTYPE html>
@@ -23,7 +22,7 @@ import { ArrowSmDownIcon } from '@heroicons/vue/outline'
 			<Comparison />
 		</div>
 		<div class="w-full flex justify-center">
-			<ArrowSmDownIcon class="h-5 w-5 text-neutral-400" />
+			<Icon pack="bi" name="arrow-down" class="h-5 w-5 text-neutral-400" />
 		</div>
 	</section>
 

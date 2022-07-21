@@ -1,6 +1,6 @@
 ---
 import Card from './Card.astro'
-import { ArrowSmDownIcon } from '@heroicons/vue/outline'
+import { Icon } from 'astro-icon'
 
 const txt = `Text is overloaded by information. Many unnecessary information inside brackets make it hard to read, stay focused and actually understand the text (for real). To get back in control, to decide what to read and what not (let's skip the useless parts), we need to fade out the brackets. _Brktfldg_ (bracket folding) is a new technique to do this. It enables you to read only the important stuff: _Read less, understand more_.`
 
@@ -25,7 +25,7 @@ const cards = [
         <Card {...cards[0]} />
 
         <div class="flex justify-center">
-            <ArrowSmDownIcon class="md:-rotate-90 h-5 w-5 text-stone-400" />
+            <Icon pack="bi" name="arrow-down" class="md:-rotate-90 h-5 w-5 text-stone-400" />
         </div>
 
         <Card {...cards[1]} />
