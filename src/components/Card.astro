@@ -1,0 +1,26 @@
+---
+import { Markdown } from 'astro/components'
+
+export interface Props {
+    title: string
+    caption: string
+    body: string
+    enhanced: boolean
+}
+const { title, caption, body, enhanced } = Astro.props
+---
+
+<div class:list={[ 'md:h-full text-stone-300 p-5 max-w-xs m-3' ,]}>
+    <header class="mb-4">
+        <h2 class="mb-2 text-lg font-bold">
+            {title}
+        </h2>
+        <p class="text-stone-400 text-sm font-semibold italic indent-4">
+            {caption}
+        </p>
+    </header>
+
+    <div class="text-sm" id={enhanced ? 'enhanced' : '' }>
+        <Markdown>{body}</Markdown>
+    </div>
+</div>

@@ -23,7 +23,9 @@
 				"ritwickdey.LiveServer",
 				"syler.sass-indented",
 				"Tobermory.es6-string-html",
-				"EditorConfig.EditorConfig"
+				"EditorConfig.EditorConfig",
+				"astro-build.astro-vscode",
+				"bradlc.vscode-tailwindcss"
 			]
 		}
 	},
