@@ -1,0 +1,36 @@
+---
+import Link from "./Link.astro"
+
+const links = [
+    {
+        title: "GitHub",
+        caption: "@devidw/brktfldg",
+        url: "https://github.com/devidw/brktfldg",
+    },
+    {
+        title: "NPM",
+        caption: "@devidw/brktfldg",
+        url: "https://www.npmjs.com/package/@devidw/brktfldg",
+    }
+]
+---
+
+<section class="md:min-h-screen md:py-24 flex">
+    <div class="max-w-2xl mx-auto md:flex justify-between p-10 md:p-0">
+        <div class="md:w-1/2 md:ml-10 mb-10 md:mb-0">
+            <h2 class="heading">
+                Open <br>
+                Source
+            </h2>
+            <p class="caption">
+                The complete source code is available for contribution, peer review, further development, and anything
+                else you can think of.
+            </p>
+        </div>
+
+        <div class="md:w-1/2 self-end">
+            {links.map(data =>
+            <Link {...data} />)}
+        </div>
+    </div>
+</section>

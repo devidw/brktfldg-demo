@@ -1,0 +1,22 @@
+---
+import { Markdown } from 'astro/components'
+
+import * as md from './ComparisonArticle.md'
+
+const { title, caption, enhanced } = Astro.props
+---
+
+<article class="md:w-1/2">
+    <header class="tracking-wide mb-7">
+        <h2 class="text-lg text-stone-200 font-semibold mb-2">
+            {title}
+        </h2>
+        <p class="text-sm text-stone-400 italic indent-2">
+            {caption}
+        </p>
+    </header>
+
+    <div class="text-sm text-stone-300" id={enhanced ? 'enhanced' : '' }>
+        <Markdown content={md.rawContent()} />
+    </div>
+</article>

@@ -1,0 +1,37 @@
+---
+import ComparisonArticle from './ComparisonArticle.astro'
+import { Icon } from 'astro-icon'
+
+const cards = [
+    {
+        title: 'Legacy Reading Experience',
+        caption: 'All bracket pairs are opened by default. There is no way to close them.',
+        enhanced: false,
+    },
+    {
+        title: 'Enhanced Reading Experience',
+        caption: 'All bracket pairs are closed. Each pair can be opened optionally.',
+        enhanced: true,
+    },
+]
+---
+
+<div class="md:max-w-2xl md:mx-auto">
+    <div class="md:flex items-center md:rounded-3xl bg-stone-700 p-10">
+        <ComparisonArticle {...cards[0]} />
+
+        <div class="flex justify-center m-5">
+            <Icon pack="bi" name="arrow-down" class="md:-rotate-90 h-5 w-5 text-stone-400 animate-pulse" />
+        </div>
+
+        <ComparisonArticle {...cards[1]} />
+    </div>
+</div>
+
+<script is:inline type="module">
+    import { collapseBrackets } from 'https://cdn.jsdelivr.net/npm/@devidw/brktfldg/dist/brktfldg.js'
+
+    collapseBrackets(
+        document.querySelector('#enhanced')
+    )
+</script>

@@ -1,0 +1,10 @@
+---
+const { title, caption, url } = Astro.props
+---
+
+<a href={url} title={title}>
+    <div class="bg-stone-700 p-5 rounded-3xl flex justify-between items-center mb-5 hover:bg-stone-600">
+        <h3 class="font-extrabold text-xl text-stone-300">{title}</h3>
+        <p class="caption">{caption}</p>
+    </div>
+</a>

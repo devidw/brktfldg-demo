@@ -1,0 +1,15 @@
+---
+import Header from "./Header.astro"
+import Comparison from "./Comparison.astro"
+import { Icon } from 'astro-icon'
+---
+
+<section class="md:min-h-screen py-12 flex justify-center items-center flex-wrap">
+    <div class="w-full mb-12">
+        <Header />
+        <Comparison />
+    </div>
+    <div class="w-full flex justify-center">
+        <Icon pack="bi" name="arrow-down" class="h-5 w-5 text-neutral-400" />
+    </div>
+</section>
