@@ -25,7 +25,8 @@
 				"Tobermory.es6-string-html",
 				"EditorConfig.EditorConfig",
 				"astro-build.astro-vscode",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+				"sysoev.language-stylus"
 			]
 		}
 	},

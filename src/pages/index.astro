@@ -1,24 +1,22 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro"
 import Hero from "../components/Hero/Hero.astro"
 import Bex from "../components/Bex.astro"
 import OSS from "../components/OSS/OSS.astro"
+import Nav from "../components/Nav.astro"
 import "../styles/index.styl"
+
+const title = 'brktfldg · Bracket Folding'
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>brktfldg · Bracket Folding</title>
-</head>
-
-<body class="bg-stone-900 text-white min-h-screen">
+<BaseLayout title={title}>
 	<Hero />
 	<Bex />
 	<OSS />
-</body>
 
-</html>
+	<section class="bg-stone-800">
+		<footer class="max-w-2xl mx-auto p-10">
+			<Nav />
+		</footer>
+	</section>
+</BaseLayout>
